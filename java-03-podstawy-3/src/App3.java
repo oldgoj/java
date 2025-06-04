@@ -1,5 +1,6 @@
 public class App3 {
     public static void main(String[] args) {
+        //System.err.println("To jest błąd");
         int yourAge = 39;
         int myAge = 49;
         byte x1 = 127;
@@ -33,5 +34,10 @@ public class App3 {
         System.out.println(Long.BYTES);
         System.out.println(Long.MIN_VALUE);
         System.out.println(Long.MAX_VALUE);
+
+        // Trzy specjalne obiekty w Java
+        // System.out - wysyła dane do konsoli
+        // System.in - pobiera dane z konsoli
+        // System.err - wysyła dane do konsoli błędów
     }
 }
