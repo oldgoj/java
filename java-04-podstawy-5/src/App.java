@@ -23,5 +23,25 @@ public class App {
         System.out.println("Potęgowanie, r9 = " + r9);
         System.out.println(abs(-12)); // Wartość bezwzględna
         System.out.println(Math.ceil(-13.6)); // Zaokrąglanie w górę
+
+        int age = 12;
+        double height = 175;
+
+        System.out.printf("Warunek %s%n", (age >= 18 && height >= 160) ? "spełniony" : "nie spełniony");
+        System.out.printf("Warunek %s%n", age == 18);
+
+        // Operatory do operacji bitowych
+        int x = 12;
+        int y = 15;
+        System.out.printf("x = %s%n", Integer.toBinaryString(x));
+        System.out.printf("y = %s%n", Integer.toBinaryString(y));
+        System.out.printf("x & y = %s%n", Integer.toBinaryString(x & y));
+        System.out.printf("~x = %s%n", Integer.toBinaryString(~x));
+
+        // Przesunięcie bitowe
+        int z = 19;
+        System.out.printf("z = %s%n", Integer.toBinaryString(z));
+        System.out.printf("z>> = %s%n", Integer.toBinaryString(z >> 1)); //dzielenie przez 2
+        System.out.printf("z<< = %s%n", Integer.toBinaryString(z << 1)); //mnożenie razy 2
     }
 }

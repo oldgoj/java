@@ -1,5 +1,3 @@
-import static java.lang.Math.*;
-
 public class App2 {
     public static void main(String[] args) {
         int a = 13, b = 4;
