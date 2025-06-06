@@ -5,7 +5,7 @@ public class App {
         Random rnd = new Random();
 
         int v1 = rnd.nextInt();
-        int v2 = rnd.nextInt(100);
+        int v2 = rnd.nextInt(100000);
         int v3 = rnd.nextInt(50, 100);
 
         System.out.println(v1);
