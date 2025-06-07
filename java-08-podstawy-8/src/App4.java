@@ -53,6 +53,25 @@ public class App4 {
 
         System.out.printf("%s%n", dayName);
 
+        // jeżeli muszę mieć bardziej skomplikowaną logikę, to używam yield
+
+        dayName = switch (day2) {
+            case 1 -> "Poniedziałek";
+            case 2 -> {
+                String message = "DAY: ";
+                String dayNameWithMessage = message + "Tuesday";
+                yield dayNameWithMessage;
+            }
+            case 3 -> "Środa";
+            case 4 -> "Czwartek";
+            case 5 -> "Piątek";
+            case 6 -> "Sobota";
+            case 7 -> "Niedziela";
+            default -> "...";
+            };
+
+            System.out.println(dayName);
+
         sc.close();
+        }
     }
-}
