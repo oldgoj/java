@@ -5,7 +5,7 @@ public class App3 {
         // Warunkowy operator trójargumentowy (ternary operator)
         // warunek ? wartość_jeśli_prawda : wartość_jeśli_fałsz
 
-        // Liczba losowana z przedziału [45, 75] i jeśli podzeilna przez 3, to do zmiennej xx przypisz wartość 1, w przeciwnym wypadku 2
+        // Liczba losowana z przedziału [45, 75] i jeśli podzielna przez 3, to do zmiennej xx przypisz wartość 1, w przeciwnym wypadku 2
 
         Random rnd = new Random();
 
