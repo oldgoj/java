@@ -35,6 +35,24 @@ public class App4 {
                 System.out.println("Nieprawidłowy numer dnia tygodnia. Proszę podać liczbę od 1 do 7.");
         }
 
+        System.out.println(" V2 - Podaj numer dnia tygodnia (1-7):");
+
+        int day2 = sc.nextInt();
+
+        // switch expression w Javie 12+
+        String dayName = switch (day2) {
+            case 1 -> "Poniedziałek";
+            case 2 -> "Wtorek";
+            case 3 -> "Środa";
+            case 4 -> "Czwartek";
+            case 5 -> "Piątek";
+            case 6 -> "Sobota";
+            case 7 -> "Niedziela";
+            default -> "Nieprawidłowy numer dnia tygodnia. Proszę podać liczbę od 1 do 7.";
+        };
+
+        System.out.printf("%s%n", dayName);
+
         sc.close();
     }
 }
