@@ -20,5 +20,14 @@ public class App {
         } else {
             System.out.println("EQ");
         }
+
+        // zastosowanie klasy Math do porównania
+        System.out.println("Z zastosowaniem klasy Math");
+
+        if (rnd1 == rnd2){
+            System.out.printf("Rnd1 %d i Rnd2 %d są równe%n", rnd1, rnd2);
+        } else {
+            System.out.println("Math.max: " + Math.max(rnd1, rnd2));
+        }
     }
 }
